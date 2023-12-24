@@ -113,6 +113,37 @@
     transition: all 0.3s ease-in-out;
 }
 
-.MenuContainer ul li:hover::before {
+.MenuContainer ul li:hover::before,
+.MenuContainer ul li.active::before {
     width: 5px;
+}
+
+.MenuContainer ul li:hover a,
+.MenuContainer ul li.active a {
+    color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+}
+
+.playListContainer {
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.playListContainer .nameContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.playListContainer .nameContainer p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.playListContainer .nameContainer i {
+    cursor: pointer;
+    color: #f1f1f1;
 }
